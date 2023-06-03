@@ -1,0 +1,393 @@
+@charset "UTF-8";
+@import url("reset.css");
+* {
+  font-family: "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif", "蘋方-繁";
+  font-size: 16px;
+}
+
+.mainmark {
+  position: relative;
+}
+
+.movebtn {
+  position: absolute;
+  -webkit-animation: movebtn 1s infinite 0s alternate;
+          animation: movebtn 1s infinite 0s alternate;
+  -webkit-transform: rotate(14deg);
+          transform: rotate(14deg);
+}
+
+@-webkit-keyframes movebtn {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 5px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes movebtn {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 5px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.frame {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.sm {
+  display: none;
+}
+
+.lg {
+  display: block;
+}
+
+p {
+  color: #000;
+  font-size: 1.125rem;
+  line-height: 2;
+  text-align: justify;
+}
+
+@media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 767px) {
+  .hidden-sm-up {
+    display: none !important;
+  }
+}
+
+.body {
+  overflow: hidden;
+  position: absolute;
+  display: contents;
+}
+.body .KV {
+  background-color: #fbf0da;
+  background-image: url(../imgs/KV_bg.jpg);
+  background-position: center;
+  height: 712px;
+}
+.body .KV .frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.body .KV .frame .mainmark {
+  position: relative;
+  margin-top: 131px;
+}
+.body .KV .frame .mainmark .KV_btn {
+  position: absolute;
+  margin-top: 72%;
+  margin-left: 75%;
+}
+.body .one_intro, .body .two_story, .body .three_know, .body .four_goods {
+  background-image: url(../imgs/one_pic01.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.body .one_intro .frame, .body .two_story .frame, .body .three_know .frame, .body .four_goods .frame {
+  max-width: 450px;
+  margin-right: 50%;
+  padding: 140px 0;
+}
+.body .one_intro .frame .title, .body .two_story .frame .title, .body .three_know .frame .title, .body .four_goods .frame .title {
+  margin-bottom: 40px;
+}
+.body .one_intro .frame .text p, .body .two_story .frame .text p, .body .three_know .frame .text p, .body .four_goods .frame .text p {
+  color: #fff;
+}
+.body .two_story, .body .four_goods {
+  background-image: url(../imgs/two_pic01.jpg);
+  height: 930px;
+}
+.body .two_story .frame, .body .four_goods .frame {
+  max-width: 900px;
+  margin: auto;
+}
+.body .two_story .frame .title, .body .four_goods .frame .title {
+  text-align: center;
+}
+.body .two_story .frame .content .w, .body .four_goods .frame .content .w {
+  width: 80%;
+  margin: auto;
+}
+.body .two_story .frame .content .w p, .body .four_goods .frame .content .w p {
+  color: #000;
+}
+.body .three_know {
+  background-image: url(../imgs/three_pic01.jpg);
+}
+.body .three_know .frame {
+  max-width: 450px;
+  margin-left: 50%;
+  margin-right: 0%;
+  padding-top: 140px;
+}
+.body .three_know_pic {
+  position: relative;
+  bottom: 154px;
+  left: 45%;
+  z-index: 999;
+  max-width: 567px;
+}
+.body .four_goods {
+  background-image: url(../imgs/four_pic01.jpg);
+  height: 400px;
+}
+.body .four_goods .frame {
+  padding: 50px 0;
+}
+.body .four_goods_list a {
+  text-decoration: none;
+}
+.body .four_goods_list a .title {
+  text-align: center;
+  color: #f1a8a8;
+  font-size: 2rem;
+}
+.body .four_goods_list a .goods {
+  background: linear-gradient(53deg, #52c9de 63%, #fff 63%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 0 30px 0;
+  margin: 20px 0 60px 0;
+}
+.body .four_goods_list a .goods .goodstext {
+  color: #fff;
+}
+.body .four_goods_list a .goods .goodstext .goodstext_title {
+  font-size: 2rem;
+}
+.body .four_goods_list a .goods .goodstext .goodstext_subtitle {
+  background-color: #fff;
+  color: #52c9de;
+  padding: 12px 67px;
+  font-size: 1.5rem;
+  margin: 6px 0;
+}
+.body .four_goods_list a .goods .goodstext .goodstext_more {
+  color: #de6464;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+.body .four_goods_list a .goods02 {
+  background: linear-gradient(307deg, #f1a8a8 63%, #fff 63%);
+}
+.body .four_goods_list a .goods02 .goodstext .goodstext_subtitle {
+  color: #f1a8a8;
+}
+.body a {
+  text-decoration: none;
+}
+.body a .btn {
+  background-color: #ae5aea;
+  color: #fff;
+  border-radius: 7px;
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  padding: 22px;
+  font-size: 2rem;
+  margin-bottom: 100px;
+}
+.body a:hover .btn {
+  background-color: #be7ced;
+}
+
+footer {
+  background-color: #a4a3a2;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .body .three_know_pic {
+    left: 0%;
+    bottom: 80px;
+    text-align: center;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .body .four_goods_list a .goods .goodstext {
+    width: 50%;
+  }
+  .body .four_goods_list a .goods .goodstext .goodstext_subtitle {
+    padding: 12px 5px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .body .one_intro .frame {
+    margin-right: 40%;
+  }
+
+  .body .three_know .frame {
+    margin-left: 40%;
+  }
+
+  .body .four_goods_list a .goods .goodstext {
+    margin-left: 20px;
+  }
+
+  .body .four_goods_list a .goods .goodspic img {
+    width: 90%;
+  }
+
+  .body .four_goods_list a .goods02 .goodstext {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body .KV {
+    background-image: url(../imgs/KV_bg_s.jpg);
+    height: 506px;
+  }
+  .body .KV .frame .mainmark {
+    margin-top: 80px;
+  }
+  .body .KV .frame .mainmark .KV_title {
+    text-align: center;
+  }
+  .body .KV .frame .mainmark .KV_title img {
+    width: 65%;
+  }
+  .body .KV .frame .mainmark .KV_btn {
+    margin-left: 40%;
+    margin-top: 80%;
+  }
+  .body .KV .frame .mainmark .KV_btn img {
+    width: 70%;
+  }
+  .body .one_intro, .body .two_story, .body .three_know, .body .four_goods {
+    background-image: url(../imgs/one_pic01_s.jpg);
+    min-height: 670px;
+  }
+  .body .one_intro .frame, .body .two_story .frame, .body .three_know .frame, .body .four_goods .frame {
+    padding: 20% 0;
+    margin: auto;
+  }
+  .body .two_story, .body .four_goods {
+    background-image: url(../imgs/two_pic01_s.jpg);
+    height: 800px;
+  }
+  .body .three_know {
+    background-color: #b987e0;
+    background-image: none;
+  }
+  .body .three_know_pic {
+    left: 0%;
+    bottom: 80px;
+    text-align: center;
+    margin: auto;
+  }
+  .body .three_know_pic img {
+    width: 90%;
+  }
+  .body .four_goods {
+    background-image: url(../imgs/four_pic01_s.jpg);
+    min-height: 500px;
+    height: 500px;
+  }
+  .body .four_goods_list a .goods {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: linear-gradient(163deg, #52c9de 63%, #fff 63%);
+    margin: 20px 0;
+  }
+  .body .four_goods_list a .goods .goodstext {
+    width: 90%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  .body .four_goods_list a .goods img {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .body .four_goods_list a .goods02 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background: linear-gradient(163deg, #f1a8a8 63%, #fff 63%);
+  }
+  .body .four_goods_list a .goods02 .goodstext {
+    margin-right: 0px;
+  }
+  .body a .btn {
+    width: 60%;
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .body .one_intro .frame, .body .two_story .frame, .body .three_know .frame, .body .four_goods .frame {
+    margin: auto 5%;
+  }
+  .body .one_intro .frame img, .body .two_story .frame img, .body .three_know .frame img, .body .four_goods .frame img {
+    width: 100%;
+  }
+  .body .four_goods_list .title img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .body .KV {
+    height: 506px;
+  }
+  .body .KV .frame .mainmark {
+    margin-top: 80px;
+  }
+  .body .KV .frame .mainmark .KV_title img {
+    width: 80%;
+  }
+  .body .KV .frame .mainmark .KV_btn {
+    margin-left: 40%;
+    margin-top: 95%;
+  }
+  .body .KV .frame .mainmark .KV_btn img {
+    width: 70%;
+  }
+}
